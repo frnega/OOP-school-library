@@ -172,8 +172,6 @@ I would like to thank microverse for this module.
 
 <!-- FAQ (optional) -->
 
-
-
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
