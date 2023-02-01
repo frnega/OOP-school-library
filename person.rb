@@ -1,4 +1,5 @@
 require_relative 'nameable'
+require_relative 'rental'
 
 class Person < Nameable
   attr_reader :id
@@ -20,9 +21,8 @@ class Person < Nameable
     name
   end
 
-  def add_rental(rental)
-    @rentals << rental unless @rentals.include?(rental)
-    rental.person = self
+  def add_rental(book, date)
+    Rental.new(date, self, book)
   end
 
   private
