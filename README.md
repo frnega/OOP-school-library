@@ -1,32 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -64,9 +37,9 @@ Ruby
 
 ### Key Features <a name="key-features"></a>
 
-- **[Add new students or teachers.]**
-- **[Add new books.]**
-- **[Save records of who borrowed a book and when.]**
+  **[created class person]**
+- **[created class rental]**
+- **[created class classroom]** 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,7 +47,6 @@ Ruby
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](#)
 
@@ -163,8 +135,6 @@ If you like this project... please give it a star
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank microverse for this module.
 
