@@ -142,9 +142,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_Features_1 ]**
-- [ ] **[new_Features_2 ]**
-- [ ] **[new_Features_3 ]**
+- [ ] **[Add basic UI ]**
+- [ ] **[Preserve data ]**
+- [ ] **[unit test ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
