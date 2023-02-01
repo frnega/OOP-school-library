@@ -142,8 +142,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[new_Features_1 ]**
 - [ ] **[new_Features_2 ]**
 - [ ] **[new_Features_3 ]**
