@@ -64,9 +64,9 @@ Ruby
 
 ### Key Features <a name="key-features"></a>
 
-- **[Add new students or teachers.]**
+  **[Add new students or teachers.]**
 - **[Add new books.]**
-- **[Save records of who borrowed a book and when.]**
+- **[Save records of who borrowed a book and when.]** -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,7 +74,6 @@ Ruby
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](#)
 
@@ -141,6 +140,13 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Add basic UI ]**
+- [ ] **[Preserve data ]**
+- [ ] **[unit test ]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -164,8 +170,6 @@ If you like this project... please give it a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
 I would like to thank microverse for this module.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -173,6 +177,6 @@ I would like to thank microverse for this module.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+ This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
