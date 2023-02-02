@@ -44,7 +44,7 @@ class App
       return
     end
 
-    @students << Student.new(age, nil, name, parent_permission:)
+    @students << Student.new(age, nil, name, parent_permission)
   end
 
   def create_teacher
