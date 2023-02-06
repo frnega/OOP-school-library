@@ -22,7 +22,10 @@ class Main
   def run
     puts @menu_message
     @options.each_with_index { |option, index| puts "#{index + 1} - #{option[:label]}" }
-    @app.send(@options[gets.chomp.to_i - 1][:action])
+    user_input = gets.chomp.to_i - 1
+    return @app.send(@options[user_input][:action]) if user_input == 6
+
+    @app.send(@options[user_input][:action])
 
     run
   end

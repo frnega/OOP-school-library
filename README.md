@@ -138,6 +138,12 @@ You can deploy this project using:
 
 - GitHub: [@frnega](https://github.com/frnega)
 
+👤 **Hein Tay Zar**
+
+- GitHub: [@Hein Tay](https://github.com/heintayzar-hm)
+- Twitter: [@Hein Tay](https://twitter.com/heintayzarhm)
+- LinkedIn: [Hein Tay](https://www.linkedin.com/in/hein-tay-zar)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -173,7 +179,6 @@ If you like this project... please give it a star
 I would like to thank microverse for this module.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
