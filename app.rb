@@ -28,7 +28,7 @@ class App
   def create_person
     @people.send(:create_person)
   end
- 
+
   def create_book
     @books.send(:create_book)
   end
