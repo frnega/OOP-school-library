@@ -22,7 +22,7 @@ class Student < Person
   end
 
   def to_json(*_args)
-     {
+    {
       'age' => @age,
       'classroom' => @classroom,
       'name' => @name,
@@ -30,7 +30,5 @@ class Student < Person
       'class' => self.class.name,
       'id' => @id
     }
-
   end
-
 end

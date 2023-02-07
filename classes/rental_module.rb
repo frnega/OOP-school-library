@@ -2,7 +2,13 @@ require_relative 'rental'
 require 'json'
 class RentalModule
   def initialize(books, students, teachers)
-    @rentals = File.read(File.join('data', 'rentals.json')).empty? ? [] : JSON.parse(File.read(File.join('data', 'rentals.json')))
+    @rentals = if File.read(File.join('data',
+                                      'rentals.json')).empty?
+                 []
+               else
+                 JSON.parse(File.read(File.join('data',
+                                                'rentals.json')))
+               end
     @books = books
     @students = students
     @teachers = teachers
@@ -19,7 +25,9 @@ class RentalModule
     puts
 
     puts 'Select a person from the following list by number (not id)'
-    people.each_with_index { |person, index| puts "#{index}) [#{person['class']}] Name: #{person['name']}, ID: #{person['id']} Age: #{person['age'] }" }
+    people.each_with_index do |person, index|
+      puts "#{index}) [#{person['class']}] Name: #{person['name']}, ID: #{person['id']} Age: #{person['age']}"
+    end
 
     person_index = gets.chomp.to_i
     puts
@@ -27,7 +35,7 @@ class RentalModule
     print 'Date: '
     date = gets.chomp
 
-    rental =  Rental.new(date, @books[book_index], people[person_index])
+    rental = Rental.new(date, @books[book_index], people[person_index])
     @rentals << rental.to_json
     write_to_file
     print "Rental created successfully\n\n"
@@ -38,8 +46,11 @@ class RentalModule
     id = gets.chomp.to_i
 
     puts 'Rentals:'
-    @rentals.each { |rental| puts "Date: #{rental['date']} Book: #{rental['author']} by \" #{rental['book_title']} \"" if rental['person_id'] == id }
-
+    @rentals.each do |rental|
+      if rental['person_id'] == id
+        puts "Date: #{rental['date']} Book: #{rental['author']} by \" #{rental['book_title']} \""
+      end
+    end
   end
 
   def write_to_file

@@ -2,7 +2,12 @@ require 'json'
 
 class BookModule
   def initialize
-    @books = File.read(File.join('data', 'books.json')).empty? ? [] : JSON.parse(File.read(File.join('data', 'books.json')))
+    @books = if File.read(File.join('data',
+                                    'books.json')).empty?
+               []
+             else
+               JSON.parse(File.read(File.join('data', 'books.json')))
+             end
   end
 
   attr_accessor :books
@@ -21,7 +26,7 @@ class BookModule
   end
 
   def list_books
-    @books.each { |book| puts "Author: #{book['author']} Title: #{book['title']}"}
+    @books.each { |book| puts "Author: #{book['author']} Title: #{book['title']}" }
     puts
   end
 

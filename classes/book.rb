@@ -17,7 +17,7 @@ class Book
       'author' => @author,
       'title' => @title,
       'rentals' => @rentals,
-      'class'=> self.class.name
+      'class' => self.class.name
     }
   end
 end

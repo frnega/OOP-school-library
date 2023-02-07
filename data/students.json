@@ -14,5 +14,13 @@
     "parent_permission": false,
     "class": "Student",
     "id": 375
+  },
+  {
+    "age": "12",
+    "classroom": null,
+    "name": "fre",
+    "parent_permission": true,
+    "class": "Student",
+    "id": 527
   }
 ]

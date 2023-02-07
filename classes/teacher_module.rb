@@ -3,7 +3,13 @@ class TeacherModule
   attr_accessor :teachers
 
   def initialize
-    @teachers = File.read(File.join('data', 'teachers.json')).empty? ? [] : JSON.parse(File.read(File.join('data', 'teachers.json')))
+    @teachers = if File.read(File.join('data',
+                                       'teachers.json')).empty?
+                  []
+                else
+                  JSON.parse(File.read(File.join('data',
+                                                 'teachers.json')))
+                end
   end
 
   def create_teacher
@@ -23,7 +29,7 @@ class TeacherModule
   end
 
   def to_s
-    @teachers.each { |teacher| puts puts "[#{teacher['class']}] Age: #{teacher['age']} Name: #{teacher['name'] }" }
+    @teachers.each { |teacher| puts puts "[#{teacher['class']}] Age: #{teacher['age']} Name: #{teacher['name']}" }
     puts
   end
 

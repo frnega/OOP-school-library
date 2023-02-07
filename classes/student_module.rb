@@ -5,7 +5,13 @@ class StudentModule
   attr_accessor :students
 
   def initialize
-    @students = File.read(File.join('data', 'students.json')).empty? ? [] : JSON.parse(File.read(File.join('data', 'students.json')))
+    @students = if File.read(File.join('data',
+                                       'students.json')).empty?
+                  []
+                else
+                  JSON.parse(File.read(File.join('data',
+                                                 'students.json')))
+                end
   end
 
   def create_student

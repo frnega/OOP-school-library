@@ -30,6 +30,7 @@ class Main
     run
   end
 end
+
 def file_load
   folder = 'data'
   files = ['books.json', 'students.json', 'teachers.json', 'rentals.json']
