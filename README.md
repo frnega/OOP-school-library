@@ -66,7 +66,7 @@ Ruby
 
   **[Add new students or teachers.]**
 - **[Add new books.]**
-- **[Save records of who borrowed a book and when.]** -->
+- **[Save records of who borrowed a book and when.]** 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
