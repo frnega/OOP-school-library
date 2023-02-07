@@ -30,6 +30,16 @@ class Main
     run
   end
 end
+def file_load
+  folder = 'data'
+  files = ['books.json', 'students.json', 'teachers.json', 'rentals.json']
+  FileUtils.mkdir_p(folder)
 
+  files.each do |file|
+    path = File.join(folder, file)
+    File.new(path, 'w') unless File.exist?(path)
+  end
+end
+file_load
 main = Main.new
 main.run

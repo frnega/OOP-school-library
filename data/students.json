@@ -1,0 +1,18 @@
+[
+  {
+    "age": "10",
+    "classroom": null,
+    "name": "Hein",
+    "parent_permission": true,
+    "class": "Student",
+    "id": 105
+  },
+  {
+    "age": "90",
+    "classroom": null,
+    "name": "1000",
+    "parent_permission": false,
+    "class": "Student",
+    "id": 375
+  }
+]
