@@ -12,8 +12,13 @@ describe Person do
         it 'has the given data ' do
             expect(@person).to have_attributes(:name => 'Hein Tay Zar', :age => 12)
         end
+        
         it 'has an id ' do
-            expect(@person.id).not to be_nil
+            expect(@person.id).to be_an_instance_of(Integer)
+        end
+
+        it 'can use services ' do
+            expect(@person.can_use_services?).to be true
         end
     end
   end
