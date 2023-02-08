@@ -11,4 +11,13 @@ class Book
   def to_s
     "Title: \"#{@title}\", Author: #{@author}"
   end
+
+  def to_json(*_args)
+    {
+      'author' => @author,
+      'title' => @title,
+      'rentals' => @rentals,
+      'class' => self.class.name
+    }
+  end
 end

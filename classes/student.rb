@@ -20,4 +20,15 @@ class Student < Person
   def to_s
     "[Student] #{super}"
   end
+
+  def to_json(*_args)
+    {
+      'age' => @age,
+      'classroom' => @classroom,
+      'name' => @name,
+      'parent_permission' => @parent_permission,
+      'class' => self.class.name,
+      'id' => @id
+    }
+  end
 end

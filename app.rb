@@ -8,6 +8,7 @@ require_relative 'classes/teacher_module'
 require_relative 'classes/person_module'
 require_relative 'classes/book_module'
 require_relative 'classes/rental_module'
+require 'fileutils'
 class App
   def initialize
     @books = BookModule.new

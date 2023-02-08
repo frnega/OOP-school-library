@@ -3,7 +3,13 @@ class TeacherModule
   attr_accessor :teachers
 
   def initialize
-    @teachers = []
+    @teachers = if File.read(File.join('data',
+                                       'teachers.json')).empty?
+                  []
+                else
+                  JSON.parse(File.read(File.join('data',
+                                                 'teachers.json')))
+                end
   end
 
   def create_teacher
@@ -16,11 +22,19 @@ class TeacherModule
     print 'Specialization: '
     specialization = gets.chomp
 
-    @teachers << Teacher.new(age, specialization, name)
+    teacher = Teacher.new(age, specialization, name)
+    @teachers << teacher.to_json
+
+    write_to_file
   end
 
   def to_s
-    @teachers.each { |teacher| puts teacher }
+    @teachers.each { |teacher| puts puts "[#{teacher['class']}] Age: #{teacher['age']} Name: #{teacher['name']}" }
     puts
+  end
+
+  def write_to_file
+    json_data = JSON.pretty_generate(@teachers)
+    File.write(File.join('data', 'teachers.json'), json_data)
   end
 end

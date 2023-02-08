@@ -1,0 +1,18 @@
+[
+  {
+    "age": "90",
+    "specialization": "dsf",
+    "name": "koko",
+    "parent_permission": true,
+    "class": "Teacher",
+    "id": 373
+  },
+  {
+    "age": "23",
+    "specialization": "none",
+    "name": "ebi",
+    "parent_permission": true,
+    "class": "Teacher",
+    "id": 753
+  }
+]

@@ -6,12 +6,19 @@ class Rental
     @date = date
     @book = book
     @person = person
-
-    @book.rentals << self
-    @person.rentals << self
   end
 
   def to_s
-    "Date: #{@date}, Book #{@book.title} by #{@book.author}"
+    "Date: #{@date}, Book #{@book['title']} by #{@book['author']}"
+  end
+
+  def to_json(*_args)
+    {
+      'date' => @date,
+      'book_title' => @book['title'],
+      'author' => @book['author'],
+      'person_id' => @person['id'],
+      'class' => self.class.name
+    }
   end
 end
